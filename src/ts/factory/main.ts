@@ -21,3 +21,4 @@ function gameLogic() {
 function shouldSpawnEnemy(): boolean {
     return true
 }
+
