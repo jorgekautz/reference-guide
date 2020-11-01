@@ -1,1 +1,1 @@
-## Chain of responsibility pattern
+## Chain of Responsibility pattern

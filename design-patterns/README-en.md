@@ -49,38 +49,38 @@ They are the ones that facilitate the task of creating new objects, in such a wa
 Creational patterns are based on two concepts: Encapsulate knowledge about the specific types that the system uses. These patterns usually work with interfaces, so the specific implementation that is used is isolated. And hide how concrete implementations need to be created and how they are combined with each other.
 
 The best known creational patterns are:
-* [Abstract Factory](patterns/creational/abstract-factory-en.md): It provides an interface that delegates the creation of a set of related objects without the need to specify at any time which are the specific implementations.
-* [Factory Method](patterns/creational/factory-method-en.md): Expose a creation method, delegating the implementation of this method to subclasses.
-* [Builder](patterns/creational/builder-en.md): It separates the creation of a complex object from its structure, so that the same construction process can be used to create different representations.
-* [Singleton](patterns/creational/singleton-en.md): It limits the number of possible instances of a class in the program to one, and provides global access to it.
-* [Prototype](patterns/creational/prototype-en.md): It allows the creation of objects based on "templates". A new object is created from the cloning of another object.
+* [**Abstract Factory**](patterns/creational/abstract-factory-en.md): It provides an interface that delegates the creation of a set of related objects without the need to specify at any time which are the specific implementations.
+* [**Factory Method**](patterns/creational/factory-method-en.md): Expose a creation method, delegating the implementation of this method to subclasses.
+* [**Builder**](patterns/creational/builder-en.md): It separates the creation of a complex object from its structure, so that the same construction process can be used to create different representations.
+* [**Singleton**](patterns/creational/singleton-en.md): It limits the number of possible instances of a class in the program to one, and provides global access to it.
+* [**Prototype**](patterns/creational/prototype-en.md): It allows the creation of objects based on "templates". A new object is created from the cloning of another object.
 
 ### Structural patterns
 
 They are patterns that facilitate software modeling by specifying the way in which some classes are related to others.
 
 The best known structural patterns are:
-* [Adapter](patterns/structural/adapter-en.md): It allows two classes with different interfaces to work between them, through an intermediate object with which they communicate and interact.
-* [Bridge](patterns/structural/bridge-en.md): Decouples an abstraction from your implementation, so the two can evolve independently.
-* [Composite](patterns/structural/composite-en.md): It facilitates the creation of tree object structures, where all the elements use the same interface. Each of them can in turn contain a list of those objects, or be the last one in that branch.
-* [Decorator](patterns/structural/decorator-en.md): It allows adding extra functionality to an object (dynamically or statically) without modifying the behavior of other objects of the same type.
-* [Facade](patterns/structural/facade-en.md): A facade is an object that creates a simplified interface to deal with another more complex piece of code, in a way that simplifies and isolates its use. An example could be creating a facade to deal with a class from an external library.
-* [Flyweight](patterns/structural/flyweight-en.md): A large number of objects share the same object with common properties in order to save memory.
-* [Proxy](patterns/structural/proxy-en.md): It is a class that works as an interface to anything else: an Internet connection, a file on disk, or any other resource that is expensive or impossible to duplicate.
+* [**Adapter**](patterns/structural/adapter-en.md): It allows two classes with different interfaces to work between them, through an intermediate object with which they communicate and interact.
+* [**Bridge**](patterns/structural/bridge-en.md): Decouples an abstraction from your implementation, so the two can evolve independently.
+* [**Composite**](patterns/structural/composite-en.md): It facilitates the creation of tree object structures, where all the elements use the same interface. Each of them can in turn contain a list of those objects, or be the last one in that branch.
+* [**Decorator**](patterns/structural/decorator-en.md): It allows adding extra functionality to an object (dynamically or statically) without modifying the behavior of other objects of the same type.
+* [**Facade**](patterns/structural/facade-en.md): A facade is an object that creates a simplified interface to deal with another more complex piece of code, in a way that simplifies and isolates its use. An example could be creating a facade to deal with a class from an external library.
+* [**Flyweight**](patterns/structural/flyweight-en.md): A large number of objects share the same object with common properties in order to save memory.
+* [**Proxy**](patterns/structural/proxy-en.md): It is a class that works as an interface to anything else: an Internet connection, a file on disk, or any other resource that is expensive or impossible to duplicate.
 
 ### Behavior patterns
 
 In this last group, most of the patterns are found, and they are used to manage algorithms, relationships and responsibilities between objects.
 
 The behavior patterns are:
-* [Command](patterns/behavior/command.md): They are objects that encapsulate an action and the parameters they need to execute.
-* [Chain of responsibility](patterns/behavior/chain-of-responsibility.md): Avoid coupling to the sender and receiver of a request giving the possibility to several receivers to consume it. Each receiver has the option of consuming that request or passing it on to the next one in the chain.
-* [Interpreter](patterns/behavior/interpreter.md): Defines a representation for a grammar as well as the mechanism to evaluate it. The language syntax tree is typically modeled using the Composite pattern.
-* [Iterator](patterns/behavior/iterator.md): It is used to be able to move through the elements of a set sequentially without the need to expose their specific implementation.
-* [Mediator](patterns/behavior/mediator.md): An object that encapsulates how another set of objects interact and communicate with each other.
-* [Memento](patterns/behavior/memento.md): Grants the ability to restore an object to a previous state.
-* [Observer](patterns/behavior/observer.md): Objects are able to subscribe to a series of events that another target is going to broadcast, and they will be notified when this occurs.
-* [State](patterns/behavior/state.md): Allows you to modify the way an object behaves at run time, based on its internal state.
-* [Strategy](patterns/behavior/strategy.md): It allows the selection of the algorithm that executes a certain action at runtime.
-* [Template Method](patterns/behavior/template-method.md): Specifies the skeleton of an algorithm, allowing subclasses to define how they implement actual behavior.
-* [Visitor](patterns/behavior/visitor.md): Allows you to separate the algorithm from the data structure that will be used to execute it. In this way, new operations can be added to these structures without having to modify them.
+* [**Command**](patterns/behavior/command.md): They are objects that encapsulate an action and the parameters they need to execute.
+* [**Chain of Responsibility**](patterns/behavior/chain-of-responsibility.md): Avoid coupling to the sender and receiver of a request giving the possibility to several receivers to consume it. Each receiver has the option of consuming that request or passing it on to the next one in the chain.
+* [**Interpreter**](patterns/behavior/interpreter.md): Defines a representation for a grammar as well as the mechanism to evaluate it. The language syntax tree is typically modeled using the Composite pattern.
+* [**Iterator**](patterns/behavior/iterator.md): It is used to be able to move through the elements of a set sequentially without the need to expose their specific implementation.
+* [**Mediator**](patterns/behavior/mediator.md): An object that encapsulates how another set of objects interact and communicate with each other.
+* [**Memento**](patterns/behavior/memento.md): Grants the ability to restore an object to a previous state.
+* [**Observer**](patterns/behavior/observer.md): Objects are able to subscribe to a series of events that another target is going to broadcast, and they will be notified when this occurs.
+* [**State**](patterns/behavior/state.md): Allows you to modify the way an object behaves at run time, based on its internal state.
+* [**Strategy**](patterns/behavior/strategy.md): It allows the selection of the algorithm that executes a certain action at runtime.
+* [**Template Method**](patterns/behavior/template-method.md): Specifies the skeleton of an algorithm, allowing subclasses to define how they implement actual behavior.
+* [**Visitor**](patterns/behavior/visitor.md): Allows you to separate the algorithm from the data structure that will be used to execute it. In this way, new operations can be added to these structures without having to modify them.

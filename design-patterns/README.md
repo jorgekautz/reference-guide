@@ -49,38 +49,38 @@ Son los que facilitan la tarea de creación de nuevos objetos, de tal forma que 
 Los patrones creacionales están basados en dos conceptos: Encapsular el conocimiento acerca de los tipos concretos que el sistema utiliza. Estos patrones normalmente trabajan con interfaces, por lo que la implementación concreta que se utilice queda aislada. Y ocultar cómo las implementaciones concretas necesitan ser creadas y cómo se combinan entre sí.
 
 Los patrones creacionales más conocidos son:
-* [Abstract Factory](patterns/creational/abstract-factory.md): Provee una interfaz que delega la creación de un conjunto de objetos relacionados sin necesidad de especificar en ningún momento cuáles son las implementaciones concretas.
-* [Factory Method](patterns/creational/factory-method.md): Expone un método de creación, delegando en las subclases la implementación de este método.
-* [Builder](patterns/creational/builder.md): Separa la creación de un objeto complejo de su estructura, de tal forma que el mismo proceso de construcción puede servir para crear distintas representaciones.
-* [Singleton](patterns/creational/singleton.md): Limita a uno el número de instancias posibles de una clase en el programa, y proporciona un acceso global al mismo.
-* [Prototype](patterns/creational/prototype.md): Permite la creación de objetos basados en “plantillas”. Un nuevo objeto se crea a partir de la clonación de otro objeto.
+* [**Abstract Factory**](patterns/creational/abstract-factory.md): Provee una interfaz que delega la creación de un conjunto de objetos relacionados sin necesidad de especificar en ningún momento cuáles son las implementaciones concretas.
+* [**Factory Method**](patterns/creational/factory-method.md): Expone un método de creación, delegando en las subclases la implementación de este método.
+* [**Builder**](patterns/creational/builder.md): Separa la creación de un objeto complejo de su estructura, de tal forma que el mismo proceso de construcción puede servir para crear distintas representaciones.
+* [**Singleton**](patterns/creational/singleton.md): Limita a uno el número de instancias posibles de una clase en el programa, y proporciona un acceso global al mismo.
+* [**Prototype**](patterns/creational/prototype.md): Permite la creación de objetos basados en “plantillas”. Un nuevo objeto se crea a partir de la clonación de otro objeto.
 
 ### Patrones estructurales
 
 Son patrones que facilitan la modelización del software especificando la forma en la que unas clases se relacionan con otras.
 
 Los patrones estructurales más conocidos son:
-* [Adapter](patterns/structural/adapter.md): Permite a dos clases con diferentes interfaces trabajar entre ellas, a través de un objeto intermedio con el que se comunican e interactúan.
-* [Bridge](patterns/structural/bridge.md): Desacopla una abstracción de su implementación, para que las dos puedan evolucionar de forma independiente.
-* [Composite](patterns/structural/composite.md): Facilita la creación de estructuras de objetos en árbol, donde todos los elementos emplean una misma interfaz. Cada uno de ellos puede a su vez contener un listado de esos objetos, o ser el último de esa rama.
-* [Decorator](patterns/structural/decorator.md): Permite añadir funcionalidad extra a un objeto (de forma dinámica o estática) sin modificar el comportamiento del resto de objetos del mismo tipo.
-* [Facade](patterns/structural/facade.md): Una fachada es un objeto que crea una interfaz simplificada para tratar con otra parte del código más compleja, de tal forma que simplifica y aísla su uso. Un ejemplo podría ser crear una fachada para tratar con una clase de una librería externa.
-* [Flyweight](patterns/structural/flyweight.md): Una gran cantidad de objetos comparte un mismo objeto con propiedades comunes con el fin de ahorrar memoria.
-* [Proxy](patterns/structural/proxy.md): Es una clase que funciona como interfaz hacia cualquier otra cosa: una conexión a Internet, un archivo en disco o cualquier otro recurso que sea costoso o imposible de duplicar.
+* [**Adapter**](patterns/structural/adapter.md): Permite a dos clases con diferentes interfaces trabajar entre ellas, a través de un objeto intermedio con el que se comunican e interactúan.
+* [**Bridge**](patterns/structural/bridge.md): Desacopla una abstracción de su implementación, para que las dos puedan evolucionar de forma independiente.
+* [**Composite**](patterns/structural/composite.md): Facilita la creación de estructuras de objetos en árbol, donde todos los elementos emplean una misma interfaz. Cada uno de ellos puede a su vez contener un listado de esos objetos, o ser el último de esa rama.
+* [**Decorator**](patterns/structural/decorator.md): Permite añadir funcionalidad extra a un objeto (de forma dinámica o estática) sin modificar el comportamiento del resto de objetos del mismo tipo.
+* [**Facade**](patterns/structural/facade.md): Una fachada es un objeto que crea una interfaz simplificada para tratar con otra parte del código más compleja, de tal forma que simplifica y aísla su uso. Un ejemplo podría ser crear una fachada para tratar con una clase de una librería externa.
+* [**Flyweight**](patterns/structural/flyweight.md): Una gran cantidad de objetos comparte un mismo objeto con propiedades comunes con el fin de ahorrar memoria.
+* [**Proxy**](patterns/structural/proxy.md): Es una clase que funciona como interfaz hacia cualquier otra cosa: una conexión a Internet, un archivo en disco o cualquier otro recurso que sea costoso o imposible de duplicar.
 
 ### Patrones de comportamiento
 
 En este último grupo se encuentran la mayoría de los patrones, y se usan para gestionar algoritmos, relaciones y responsabilidades entre objetos.
 
 Los patrones de comportamiento son:
-* [Command](patterns/behavior/command.md): Son objetos que encapsulan una acción y los parámetros que necesitan para ejecutarse.
-* [Chain of responsibility](patterns/behavior/chain-of-responsibility.md): Evita acoplar al emisor y receptor de una petición dando la posibilidad a varios receptores de consumirlo. Cada receptor tiene la opción de consumir esa petición o pasárselo al siguiente dentro de la cadena.
-* [Interpreter](patterns/behavior/interpreter.md): Define una representación para una gramática así como el mecanismo para evaluarla. El árbol de sintaxis del lenguaje se suele modelar mediante el patrón Composite.
-* [Iterator](patterns/behavior/iterator.md): Se utiliza para poder moverse por los elementos de un conjunto de forma secuencial sin necesidad de exponer su implementación específica.
-* [Mediator](patterns/behavior/mediator.md): Objeto que encapsula cómo otro conjunto de objetos interactúan y se comunican entre sí.
-* [Memento](patterns/behavior/memento.md): Otorga la capacidad de restaurar un objeto a un estado anterior.
-* [Observer](patterns/behavior/observer.md): Los objetos son capaces de suscribirse a una serie de eventos que otro objetivo va a emitir, y serán avisados cuando esto ocurra.
-* [State](patterns/behavior/state.md): Permite modificar la forma en que un objeto se comporta en tiempo de ejecución, basándose en su estado interno.
-* [Strategy](patterns/behavior/strategy.md): Permite la selección del algoritmo que ejecuta cierta acción en tiempo de ejecución.
-* [Template Method](patterns/behavior/template-method.md): Especifica el esqueleto de un algoritmo, permitiendo a las subclases definir cómo implementan el comportamiento real.
-* [Visitor](patterns/behavior/visitor.md): Permite separar el algoritmo de la estructura de datos que se utilizará para ejecutarlo. De esta forma se pueden añadir nuevas operaciones a estas estructuras sin necesidad de modificarlas.
+* [**Command**](patterns/behavior/command.md): Son objetos que encapsulan una acción y los parámetros que necesitan para ejecutarse.
+* [**Chain of Responsibility**](patterns/behavior/chain-of-responsibility.md): Evita acoplar al emisor y receptor de una petición dando la posibilidad a varios receptores de consumirlo. Cada receptor tiene la opción de consumir esa petición o pasárselo al siguiente dentro de la cadena.
+* [**Interpreter**](patterns/behavior/interpreter.md): Define una representación para una gramática así como el mecanismo para evaluarla. El árbol de sintaxis del lenguaje se suele modelar mediante el patrón Composite.
+* [**Iterator**](patterns/behavior/iterator.md): Se utiliza para poder moverse por los elementos de un conjunto de forma secuencial sin necesidad de exponer su implementación específica.
+* [**Mediator**](patterns/behavior/mediator.md): Objeto que encapsula cómo otro conjunto de objetos interactúan y se comunican entre sí.
+* [**Memento**](patterns/behavior/memento.md): Otorga la capacidad de restaurar un objeto a un estado anterior.
+* [**Observer**](patterns/behavior/observer.md): Los objetos son capaces de suscribirse a una serie de eventos que otro objetivo va a emitir, y serán avisados cuando esto ocurra.
+* [**State**](patterns/behavior/state.md): Permite modificar la forma en que un objeto se comporta en tiempo de ejecución, basándose en su estado interno.
+* [**Strategy**](patterns/behavior/strategy.md): Permite la selección del algoritmo que ejecuta cierta acción en tiempo de ejecución.
+* [**Template Method**](patterns/behavior/template-method.md): Especifica el esqueleto de un algoritmo, permitiendo a las subclases definir cómo implementan el comportamiento real.
+* [**Visitor**](patterns/behavior/visitor.md): Permite separar el algoritmo de la estructura de datos que se utilizará para ejecutarlo. De esta forma se pueden añadir nuevas operaciones a estas estructuras sin necesidad de modificarlas.

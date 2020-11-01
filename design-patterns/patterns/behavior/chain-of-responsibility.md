@@ -1,1 +1,1 @@
-## Patrón Chain of responsibility
+## Patrón Chain of Responsibility
