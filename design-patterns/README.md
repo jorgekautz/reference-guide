@@ -24,14 +24,14 @@ Los patrones de diseño atajan ese punto. Una vez se conozcan, podran contar con
 
 ### 2. Te ayudan a estar seguro de la validez del código
 
-Un poco relacionado con lo anterior, siempre que creamos algo nuevo nos surge la duda de si realmente estamos dando con la solución correcta, o si realmente habrá una respuesta mejor. Y el tema es que es una duda muy razonable y que en muchos casos la respuesta sea la que no deseas: sí que hay una solución más válida, y has perdido tu valioso tiempo en implementar algo que, aunque funciona, podría haberse modelado mejor.
+Un poco relacionado con lo anterior, siempre que se crea algo nuevo surge la duda de si realmente se está dando con la solución correcta, o si realmente habrá una respuesta mejor. Y esto es una duda muy razonable y que en muchos casos la respuesta no es la deseada: sí que existe una solución más óptima, y se ha perdido tiempo valioso en implementar algo que, aunque funciona, podría haberse modelado mejor.
 
-Los patrones de diseño son estructuras probadas por millones de desarrolladores a lo largo de muchos años, por lo que si eliges el patrón adecuado para modelar el problema adecuado, puedes estar seguro de que va a ser una de las soluciones más válidas (si no la que más) que puedas encontrar.
+Los patrones de diseño son estructuras probadas por millones de desarrolladores a lo largo de muchos años, por lo que si se elige el patrón adecuado para modelar el problema, se puede estar seguro de que va a ser una de las soluciones más válidas (si no la que más) que se pueda encontrar.
 
-### 3. Establecen un lenguaje común
+### 3. They establish a common language
 
-Todas las demás razones palidecen ante esta. Modelar tu código mediante patrones te ayudará a explicar a otras personas, conozcan tu código o no, a entender cómo has atajado un problema. Además ayudan a otros desarrolladores a comprender lo que has implementado, cómo y por qué, y además a descubrir rápidamente si esa era la mejor solución o no.
+Todas las demás razones palidecen ante esta. Modelar un código mediante patrones ayuda a explicarle a otras personas, más allá de que conozcan el código o no, a entender cómo se ha atajado un problema. Además ayuda a otros desarrolladores a comprender lo que se ha implementado, cómo y por qué, y además a descubrir rápidamente si esa era la mejor solución o no.
 
-Pero también te servirá para sentarte con tus compañeros a pensar sobre cómo solucionar algo, y poneros de acuerdo mucho más rápido, explicar de forma más sencilla cuáles son vuestras ideas y que el resto lo comprenda sin ningún problema. Los patrones de diseño os ayudarán a ti y a tu equipo, en definitiva, a avanzar mucho más rápido, con un código más fácil de entender para todos y mucho más robusto.
+Pero también sirve para sentarte con otros compañeros a pensar sobre cómo solucionar algo, y ponerse de acuerdo mucho más rápido, explicar de forma más sencilla cuáles son sus ideas y que el resto lo comprenda sin ningún problema. Los patrones de diseño te ayudarán a ti y a tu equipo, en definitiva, a avanzar mucho más rápido, con un código más fácil de entender para todos y mucho más robusto.
 
 ## ¿Cómo identificar qué patrón encaja con un problema?

@@ -23,3 +23,16 @@ But you have to be honest: always looking for a new solution to the same problem
 Design patterns cut that point. Once they are known, they will be able to count on a set of well-proven rules and tools, which will allow the solution of most problems directly, without having to think about how valid they are, or if there may be a better alternative.
 
 ### 2. They help you to be sure of the validity of the code
+
+A little related to the above, whenever something new is created, the question arises as to whether it is really coming up with the correct solution, or if there will really be a better answer. And this is a very reasonable doubt and that in many cases the answer is not the desired one: there is a more optimal solution, and valuable time has been lost in implementing something that, although it works, could have been better modeled.
+
+Design patterns are structures that have been tested by millions of developers over many years, so if you choose the right pattern to model the problem, you can be sure that it will be one of the most valid solutions (if not the most) that can be found.
+
+### 3. They establish a common language
+
+All other reasons pale in front of this one. Modeling a code using patterns helps to explain to other people, regardless of whether they know the code or not, to understand how a problem has been tackled. It also helps other developers to understand what has been implemented, how and why, and also to quickly discover if that was the best solution or not.
+
+But it also serves to sit down with other colleagues to think about how to solve something, and agree much faster, explain more easily what their ideas are and that the rest understand without any problem. The design patterns will help you and your team, ultimately, to move forward much faster, with a code that is easier for everyone to understand and much more robust.
+
+## How do you identify which pattern fits a problem?
+
