@@ -1,5 +1,5 @@
 # Patrones de diseño
-<img align="right" width="100" height="100" src="https://david-dm.org/dwyl/esta/status.svg">
+<img align="right" src="https://david-dm.org/dwyl/esta/status.svg">
 
 *Lea esto en otros idiomas: [English](README.en.md)*
 

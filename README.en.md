@@ -1,5 +1,5 @@
 # Design patterns
-<img align="right" width="100" height="100" src="https://david-dm.org/dwyl/esta/status.svg">
+<img align="right" src="https://david-dm.org/dwyl/esta/status.svg">
 
 *Read this in other languages: [Español](README.md)*
 
