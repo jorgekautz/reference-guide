@@ -36,3 +36,6 @@ But it also serves to sit down with other colleagues to think about how to solve
 
 ## How do you identify which pattern fits a problem?
 
+Unfortunately, there is bad news… This is the most difficult point, and the most obvious answer, which is also the one we like least, is that you learn by doing. Experience is the only valid way to become more adept at detecting where design patterns can help.
+
+Of course, there are known situations in which one employer or another can help, and they will be discussed throughout the articles. It is also recommended that you read the Head First [Design Patterns](books/Head-First-Design-Patterns.pdf) book, in which, in addition to explaining the patterns in a very entertaining way, it explains very well how to use them in real life.

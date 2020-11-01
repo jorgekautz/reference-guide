@@ -35,3 +35,7 @@ Todas las demás razones palidecen ante esta. Modelar un código mediante patron
 Pero también sirve para sentarte con otros compañeros a pensar sobre cómo solucionar algo, y ponerse de acuerdo mucho más rápido, explicar de forma más sencilla cuáles son sus ideas y que el resto lo comprenda sin ningún problema. Los patrones de diseño te ayudarán a ti y a tu equipo, en definitiva, a avanzar mucho más rápido, con un código más fácil de entender para todos y mucho más robusto.
 
 ## ¿Cómo identificar qué patrón encaja con un problema?
+
+Desafortunadamente, hay malas noticias… Este es el punto más complicado, y la respuesta más evidente, que es también la que menos nos gusta, es que se aprende practicando. La experiencia es la única forma válida de ser más hábil detectando dónde pueden ayudar los patrones de diseño.
+
+Por supuesto, hay situaciones conocidas en las que un patrón u otro puede ayudar, y se irán comentando a lo largo de los artículos. Además se recomienda que leas el libro de Head First [Design Patterns](books/Head-First-Design-Patterns.pdf) , en el que además de explicar los patrones de forma muy amena, explica muy bien cómo usarlos en la vida real.
