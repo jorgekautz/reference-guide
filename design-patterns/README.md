@@ -28,7 +28,7 @@ Un poco relacionado con lo anterior, siempre que se crea algo nuevo surge la dud
 
 Los patrones de diseño son estructuras probadas por millones de desarrolladores a lo largo de muchos años, por lo que si se elige el patrón adecuado para modelar el problema, se puede estar seguro de que va a ser una de las soluciones más válidas (si no la que más) que se pueda encontrar.
 
-### 3. They establish a common language
+### 3. Establecen un lenguaje común
 
 Todas las demás razones palidecen ante esta. Modelar un código mediante patrones ayuda a explicarle a otras personas, más allá de que conozcan el código o no, a entender cómo se ha atajado un problema. Además ayuda a otros desarrolladores a comprender lo que se ha implementado, cómo y por qué, y además a descubrir rápidamente si esa era la mejor solución o no.
 
