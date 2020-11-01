@@ -1,6 +1,6 @@
 # Patrones de diseño
 
-*Lea esto en otros idiomas: [English](README.en.md)
+*Lea esto en otros idiomas: [English](README.en.md)*
 
 ## ¿Qué son los patrones de diseño?
 Hay una cosa que está clara, por muy específico que sea un problema al que se esté enfrentando un desarrollor de software, hay un 99% de posibilidades de que alguien ya se haya enfrentado a un problema similar en el pasado, que se pueda modelar de la misma manera.

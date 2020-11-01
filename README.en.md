@@ -1,6 +1,6 @@
 # Design patterns
 
-*Read this in other languages: [Español](README.md)
+*Read this in other languages: [Español](README.md)*
 
 ## What are design patterns?
 There is one thing that is clear, no matter how specific a problem a software developer is facing is, there is a 99% chance that someone has already faced a similar problem in the past, which can be modeled from the same way.
