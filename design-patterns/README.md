@@ -38,4 +38,4 @@ Pero también sirve para sentarte con otros compañeros a pensar sobre cómo sol
 
 Desafortunadamente, hay malas noticias… Este es el punto más complicado, y la respuesta más evidente, que es también la que menos nos gusta, es que se aprende practicando. La experiencia es la única forma válida de ser más hábil detectando dónde pueden ayudar los patrones de diseño.
 
-Por supuesto, hay situaciones conocidas en las que un patrón u otro puede ayudar, y se irán comentando a lo largo de los artículos. Además se recomienda que leas el libro de Head First [Design Patterns](books/Head-First-Design-Patterns.pdf) , en el que además de explicar los patrones de forma muy amena, explica muy bien cómo usarlos en la vida real.
+Por supuesto, hay situaciones conocidas en las que un patrón u otro puede ayudar, y se irán comentando a lo largo de los artículos. Además se recomienda que leas el libro de Head First [Design Patterns](https://drive.google.com/file/d/1HyBSWiaL4Treg7ggJ8ZhRh4eXUsFJokl/view?usp=sharing) , en el que además de explicar los patrones de forma muy amena, explica muy bien cómo usarlos en la vida real.
