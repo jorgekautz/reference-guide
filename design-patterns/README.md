@@ -2,8 +2,6 @@
 
 [comment]: <> (<img align="right" src="https://camo.githubusercontent.com/cfcaf3a99103d61f387761e5fc445d9ba0203b01/68747470733a2f2f7472617669732d63692e6f72672f6477796c2f657374612e7376673f6272616e63683d6d6173746572">)
 
-*Lea esto en otros idiomas:* [English](README-en.md)
-
 ## ¿Qué son los patrones de diseño?
 
 Hay una cosa que está clara, por muy específico que sea un problema al que se esté enfrentando un desarrollor de software, hay un 99% de posibilidades de que alguien ya se haya enfrentado a un problema similar en el pasado, que se pueda modelar de la misma manera.
@@ -69,3 +67,20 @@ Los patrones estructurales más conocidos son:
 * [Facade](patterns/structural/facade.md): Una fachada es un objeto que crea una interfaz simplificada para tratar con otra parte del código más compleja, de tal forma que simplifica y aísla su uso. Un ejemplo podría ser crear una fachada para tratar con una clase de una librería externa.
 * [Flyweight](patterns/structural/flyweight.md): Una gran cantidad de objetos comparte un mismo objeto con propiedades comunes con el fin de ahorrar memoria.
 * [Proxy](patterns/structural/proxy.md): Es una clase que funciona como interfaz hacia cualquier otra cosa: una conexión a Internet, un archivo en disco o cualquier otro recurso que sea costoso o imposible de duplicar.
+
+### Patrones de comportamiento
+
+En este último grupo se encuentran la mayoría de los patrones, y se usan para gestionar algoritmos, relaciones y responsabilidades entre objetos.
+
+Los patrones de comportamiento son:
+* [Command](patterns/behavior/command.md): Son objetos que encapsulan una acción y los parámetros que necesitan para ejecutarse.
+* [Chain of responsibility](patterns/behavior/chain-of-responsibility.md): Evita acoplar al emisor y receptor de una petición dando la posibilidad a varios receptores de consumirlo. Cada receptor tiene la opción de consumir esa petición o pasárselo al siguiente dentro de la cadena.
+* [Interpreter](patterns/behavior/interpreter.md): Define una representación para una gramática así como el mecanismo para evaluarla. El árbol de sintaxis del lenguaje se suele modelar mediante el patrón Composite.
+* [Iterator](patterns/behavior/iterator.md): Se utiliza para poder moverse por los elementos de un conjunto de forma secuencial sin necesidad de exponer su implementación específica.
+* [Mediator](patterns/behavior/mediator.md): Objeto que encapsula cómo otro conjunto de objetos interactúan y se comunican entre sí.
+* [Memento](patterns/behavior/memento.md): Otorga la capacidad de restaurar un objeto a un estado anterior.
+* [Observer](patterns/behavior/observer.md): Los objetos son capaces de suscribirse a una serie de eventos que otro objetivo va a emitir, y serán avisados cuando esto ocurra.
+* [State](patterns/behavior/state.md): Permite modificar la forma en que un objeto se comporta en tiempo de ejecución, basándose en su estado interno.
+* [Strategy](patterns/behavior/strategy.md): Permite la selección del algoritmo que ejecuta cierta acción en tiempo de ejecución.
+* [Template Method](patterns/behavior/template-method.md): Especifica el esqueleto de un algoritmo, permitiendo a las subclases definir cómo implementan el comportamiento real.
+* [Visitor](patterns/behavior/visitor.md): Permite separar el algoritmo de la estructura de datos que se utilizará para ejecutarlo. De esta forma se pueden añadir nuevas operaciones a estas estructuras sin necesidad de modificarlas.

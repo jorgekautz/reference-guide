@@ -2,8 +2,6 @@
 
 [comment]: <> (<img align="right" src="https://camo.githubusercontent.com/cfcaf3a99103d61f387761e5fc445d9ba0203b01/68747470733a2f2f7472617669732d63692e6f72672f6477796c2f657374612e7376673f6272616e63683d6d6173746572">)
 
-*Read this in other languages: [Español](README.md)*
-
 ## What are design patterns?
 
 There is one thing that is clear, no matter how specific a problem a software developer is facing is, there is a 99% chance that someone has already faced a similar problem in the past, which can be modeled from the same way.
@@ -69,3 +67,20 @@ The best known structural patterns are:
 * [Facade](patterns/structural/facade-en.md): A facade is an object that creates a simplified interface to deal with another more complex piece of code, in a way that simplifies and isolates its use. An example could be creating a facade to deal with a class from an external library.
 * [Flyweight](patterns/structural/flyweight-en.md): A large number of objects share the same object with common properties in order to save memory.
 * [Proxy](patterns/structural/proxy-en.md): It is a class that works as an interface to anything else: an Internet connection, a file on disk, or any other resource that is expensive or impossible to duplicate.
+
+### Behavior patterns
+
+In this last group, most of the patterns are found, and they are used to manage algorithms, relationships and responsibilities between objects.
+
+The behavior patterns are:
+* [Command](patterns/behavior/command.md): They are objects that encapsulate an action and the parameters they need to execute.
+* [Chain of responsibility](patterns/behavior/chain-of-responsibility.md): Avoid coupling to the sender and receiver of a request giving the possibility to several receivers to consume it. Each receiver has the option of consuming that request or passing it on to the next one in the chain.
+* [Interpreter](patterns/behavior/interpreter.md): Defines a representation for a grammar as well as the mechanism to evaluate it. The language syntax tree is typically modeled using the Composite pattern.
+* [Iterator](patterns/behavior/iterator.md): It is used to be able to move through the elements of a set sequentially without the need to expose their specific implementation.
+* [Mediator](patterns/behavior/mediator.md): An object that encapsulates how another set of objects interact and communicate with each other.
+* [Memento](patterns/behavior/memento.md): Grants the ability to restore an object to a previous state.
+* [Observer](patterns/behavior/observer.md): Objects are able to subscribe to a series of events that another target is going to broadcast, and they will be notified when this occurs.
+* [State](patterns/behavior/state.md): Allows you to modify the way an object behaves at run time, based on its internal state.
+* [Strategy](patterns/behavior/strategy.md): It allows the selection of the algorithm that executes a certain action at runtime.
+* [Template Method](patterns/behavior/template-method.md): Specifies the skeleton of an algorithm, allowing subclasses to define how they implement actual behavior.
+* [Visitor](patterns/behavior/visitor.md): Allows you to separate the algorithm from the data structure that will be used to execute it. In this way, new operations can be added to these structures without having to modify them.
