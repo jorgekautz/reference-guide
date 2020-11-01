@@ -38,4 +38,34 @@ Pero también sirve para sentarte con otros compañeros a pensar sobre cómo sol
 
 Desafortunadamente, hay malas noticias… Este es el punto más complicado, y la respuesta más evidente, que es también la que menos nos gusta, es que se aprende practicando. La experiencia es la única forma válida de ser más hábil detectando dónde pueden ayudar los patrones de diseño.
 
-Por supuesto, hay situaciones conocidas en las que un patrón u otro puede ayudar, y se irán comentando a lo largo de los artículos. Además se recomienda que leas el libro de Head First [Design Patterns](https://drive.google.com/file/d/1HyBSWiaL4Treg7ggJ8ZhRh4eXUsFJokl/view?usp=sharing) , en el que además de explicar los patrones de forma muy amena, explica muy bien cómo usarlos en la vida real.
+Por supuesto, hay situaciones conocidas en las que un patrón u otro puede ayudar, y se irán comentando a lo largo de los artículos. Además se recomienda que leas el libro de Head First [Design Patterns](https://drive.google.com/file/d/1HyBSWiaL4Treg7ggJ8ZhRh4eXUsFJokl/view?usp=sharing), en el que además de explicar los patrones de forma muy amena, explica muy bien cómo usarlos en la vida real.
+
+## Listado de patrones de diseño
+
+Este es el listado de los patrones de diseño más conocidos. Éstos se dividen en distintos grupos según el tipo de problema que resuelven:
+
+### Patrones creacionales
+
+Son los que facilitan la tarea de creación de nuevos objetos, de tal forma que el proceso de creación pueda ser desacoplado de la implementación del resto del sistema.
+
+Los patrones creacionales están basados en dos conceptos: Encapsular el conocimiento acerca de los tipos concretos que el sistema utiliza. Estos patrones normalmente trabajan con interfaces, por lo que la implementación concreta que se utilice queda aislada. Y ocultar cómo las implementaciones concretas necesitan ser creadas y cómo se combinan entre sí.
+
+Los patrones creacionales más conocidos son:
+* [Abstract Factory](patterns/creational/abstract-factory.md): Provee una interfaz que delega la creación de un conjunto de objetos relacionados sin necesidad de especificar en ningún momento cuáles son las implementaciones concretas.
+* [Factory Method](patterns/creational/factory-method.md): Expone un método de creación, delegando en las subclases la implementación de este método.
+* [Builder](patterns/creational/builder.md): Separa la creación de un objeto complejo de su estructura, de tal forma que el mismo proceso de construcción puede servir para crear distintas representaciones.
+* [Singleton](patterns/creational/singleton.md): Limita a uno el número de instancias posibles de una clase en el programa, y proporciona un acceso global al mismo.
+* [Prototype](patterns/creational/prototype.md): Permite la creación de objetos basados en “plantillas”. Un nuevo objeto se crea a partir de la clonación de otro objeto.
+
+### Patrones estructurales
+
+Son patrones que facilitan la modelización del software especificando la forma en la que unas clases se relacionan con otras.
+
+Los patrones estructurales más conocidos son:
+* [Adapter](patterns/structural/adapter.md): Permite a dos clases con diferentes interfaces trabajar entre ellas, a través de un objeto intermedio con el que se comunican e interactúan.
+* [Bridge](patterns/structural/bridge.md): Desacopla una abstracción de su implementación, para que las dos puedan evolucionar de forma independiente.
+* [Composite](patterns/structural/composite.md): Facilita la creación de estructuras de objetos en árbol, donde todos los elementos emplean una misma interfaz. Cada uno de ellos puede a su vez contener un listado de esos objetos, o ser el último de esa rama.
+* [Decorator](patterns/structural/decorator.md): Permite añadir funcionalidad extra a un objeto (de forma dinámica o estática) sin modificar el comportamiento del resto de objetos del mismo tipo.
+* [Facade](patterns/structural/facade.md): Una fachada es un objeto que crea una interfaz simplificada para tratar con otra parte del código más compleja, de tal forma que simplifica y aísla su uso. Un ejemplo podría ser crear una fachada para tratar con una clase de una librería externa.
+* [Flyweight](patterns/structural/flyweight.md): Una gran cantidad de objetos comparte un mismo objeto con propiedades comunes con el fin de ahorrar memoria.
+* [Proxy](patterns/structural/proxy.md): Es una clase que funciona como interfaz hacia cualquier otra cosa: una conexión a Internet, un archivo en disco o cualquier otro recurso que sea costoso o imposible de duplicar.

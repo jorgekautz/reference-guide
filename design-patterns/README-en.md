@@ -39,3 +39,33 @@ But it also serves to sit down with other colleagues to think about how to solve
 Unfortunately, there is bad news… This is the most difficult point, and the most obvious answer, which is also the one we like least, is that you learn by doing. Experience is the only valid way to become more adept at detecting where design patterns can help.
 
 Of course, there are known situations in which one employer or another can help, and they will be discussed throughout the articles. It is also recommended that you read the Head First [Design Patterns](https://drive.google.com/file/d/1HyBSWiaL4Treg7ggJ8ZhRh4eXUsFJokl/view?usp=sharing) book, in which, in addition to explaining the patterns in a very entertaining way, it explains very well how to use them in real life.
+
+## List of design patterns
+
+This is the list of the most popular design patterns. These are divided into different groups according to the type of problem they solve.
+
+### Creational patterns
+
+They are the ones that facilitate the task of creating new objects, in such a way that the creation process can be decoupled from the implementation of the rest of the system.
+
+Creational patterns are based on two concepts: Encapsulate knowledge about the specific types that the system uses. These patterns usually work with interfaces, so the specific implementation that is used is isolated. And hide how concrete implementations need to be created and how they are combined with each other.
+
+The best known creational patterns are:
+* [Abstract Factory](patterns/creational/abstract-factory-en.md): It provides an interface that delegates the creation of a set of related objects without the need to specify at any time which are the specific implementations.
+* [Factory Method](patterns/creational/factory-method-en.md): Expose a creation method, delegating the implementation of this method to subclasses.
+* [Builder](patterns/creational/builder-en.md): It separates the creation of a complex object from its structure, so that the same construction process can be used to create different representations.
+* [Singleton](patterns/creational/singleton-en.md): It limits the number of possible instances of a class in the program to one, and provides global access to it.
+* [Prototype](patterns/creational/prototype-en.md): It allows the creation of objects based on "templates". A new object is created from the cloning of another object.
+
+### Structural patterns
+
+They are patterns that facilitate software modeling by specifying the way in which some classes are related to others.
+
+The best known structural patterns are:
+* [Adapter](patterns/structural/adapter-en.md): It allows two classes with different interfaces to work between them, through an intermediate object with which they communicate and interact.
+* [Bridge](patterns/structural/bridge-en.md): Decouples an abstraction from your implementation, so the two can evolve independently.
+* [Composite](patterns/structural/composite-en.md): It facilitates the creation of tree object structures, where all the elements use the same interface. Each of them can in turn contain a list of those objects, or be the last one in that branch.
+* [Decorator](patterns/structural/decorator-en.md): It allows adding extra functionality to an object (dynamically or statically) without modifying the behavior of other objects of the same type.
+* [Facade](patterns/structural/facade-en.md): A facade is an object that creates a simplified interface to deal with another more complex piece of code, in a way that simplifies and isolates its use. An example could be creating a facade to deal with a class from an external library.
+* [Flyweight](patterns/structural/flyweight-en.md): A large number of objects share the same object with common properties in order to save memory.
+* [Proxy](patterns/structural/proxy-en.md): It is a class that works as an interface to anything else: an Internet connection, a file on disk, or any other resource that is expensive or impossible to duplicate.
