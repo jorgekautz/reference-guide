@@ -3,19 +3,19 @@ export interface Color {
 }
 
 export class White implements Color {
-    getColor(): string {
+    public getColor(): string {
         return 'white'
     }
 }
 
 export class Brown implements Color {
-    getColor(): string {
+    public getColor(): string {
         return 'brown'
     }
 }
 
 export class Black implements Color {
-    getColor(): string {
+    public getColor(): string {
         return 'black'
     }
 }

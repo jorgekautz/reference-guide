@@ -4,28 +4,28 @@ export interface Animal {
 }
 
 export class Duck implements Animal {
-    getAnimal(): string {
+    public getAnimal(): string {
         return 'duck'
     }
-    makeSound(): string {
+    public makeSound(): string {
         return 'squeks'
     }
 }
 
 export class Dog implements Animal {
-    getAnimal(): string {
+    public getAnimal(): string {
         return 'dog'
     }
-    makeSound(): string {
+    public makeSound(): string {
         return 'guau'
     }
 }
 
 export class Cat implements Animal {
-    getAnimal(): string {
+    public getAnimal(): string {
         return 'cat'
     }
-    makeSound(): string {
+    public makeSound(): string {
         return 'miau'
     }
 }
