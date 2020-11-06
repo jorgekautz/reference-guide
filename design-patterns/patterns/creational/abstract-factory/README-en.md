@@ -4,7 +4,7 @@ The *Abstract Factory* design pattern seeks to group a set of classes that have 
 
 <img align="center" src="https://github.com/jorgekautz/reference-guide/blob/master/design-patterns/assets/diagram_abstract_factory.jpg?raw=true">
 
-First, create an interface of the Animal class, and later it will be used in the abstract factory.
+First, create an interface of the Animal class, as later it will be used in the abstract factory.
 
 ```typescript
 export interface Animal {

@@ -4,7 +4,7 @@ El patrón de diseño *Abstract Factory* busca agrupar un conjunto de clases que
 
 <img align="center" src="https://github.com/jorgekautz/reference-guide/blob/master/design-patterns/assets/diagram_abstract_factory.jpg?raw=true">
 
-Primero, crear una interfaz de la clase Animal, ya más adelante se usará en la fábrica abstracta.
+Primero, crear una interfaz de la clase Animal, ya que más adelante se usará en la fábrica abstracta.
 
 ```typescript
 export interface Animal {
