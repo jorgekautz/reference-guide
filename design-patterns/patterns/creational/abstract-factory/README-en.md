@@ -30,7 +30,7 @@ Also, more concrete implementations of the Animal family (Dog, Cat, etc.) can be
 
 The abstract factory deals with families of dependent objects. With that in mind, a color family will be presented as an interface, with some implementations (White, Brown, Black, etc.).
 
-The actual code will be skipped for now, but it can be found [here](../../src/abstract-factory).
+The actual code will be skipped for now, but it can be found [here](src/ts).
 
 Now that you have multiple families, you can create an abstract interface for them.
 
@@ -40,7 +40,7 @@ export interface AbstractFactory<T> {
 }
 ```
 
-Next, a factory for *Animal* will be implemented using the [Factory Method](./factory-method-en.md) design pattern.
+Next, a factory for *Animal* will be implemented using the [Factory Method](../factory-method/README-en.md) design pattern.
 
 ```typescript
 export class AnimalFactory implements AbstractFactory<Animal> {
