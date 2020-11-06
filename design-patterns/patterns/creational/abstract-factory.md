@@ -18,10 +18,10 @@ Luego una implementación concreta, cómo por ejemplo Duck.
 ```typescript
 export class Duck implements Animal {
     getAnimal(): string {
-        return 'duck'
+        return "duck"
     }
     makeSound(): string {
-        return 'squeks'
+        return "squeks"
     }
 }
 ```
