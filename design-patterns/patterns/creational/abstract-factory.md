@@ -26,7 +26,7 @@ export class Duck implements Animal {
 }
 ```
 
-Además, se pueden crear implementaciones más concretas de la familia Animal (Dog, Bear, etc.) exactamente de esta manera.
+Además, se pueden crear implementaciones más concretas de la familia Animal (Dog, Cat, etc.) exactamente de esta manera.
 
 La fábrica abstracta se ocupa de familias de objetos dependientes. Con eso en mente, se va a presentar una familia de colores como interfaz, con algunas implementaciones (White, Brown, Black, etc.).
 
@@ -49,8 +49,8 @@ export class AnimalFactory implements AbstractFactory<Animal> {
             return new Dog();
         } else if (animalType === 'Duck') {
             return new Duck()
-        } else if (animalType === 'Bear') {
-            return new Bear()
+        } else if (animalType === 'Cat') {
+            return new Cat()
         }
         return null
     }
