@@ -30,7 +30,7 @@ Además, se pueden crear implementaciones más concretas de la familia Animal (D
 
 La fábrica abstracta se ocupa de familias de objetos dependientes. Con eso en mente, se va a presentar una familia de colores como interfaz, con algunas implementaciones (White, Brown, Black, etc.).
 
-El código real se salteará de momento, pero se puede encontrar [aquí](../../src/abstract-factory/README.md).
+El código real se salteará de momento, pero se puede encontrar [aquí](../../src/abstract-factory).
 
 Ahora que se tienen varias familias, se puede crear una interfaz abstracta para ellas.
 

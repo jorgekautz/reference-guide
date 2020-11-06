@@ -30,7 +30,7 @@ Also, more concrete implementations of the Animal family (Dog, Cat, etc.) can be
 
 The abstract factory deals with families of dependent objects. With that in mind, a color family will be presented as an interface, with some implementations (White, Brown, Black, etc.).
 
-The actual code will be skipped for now, but it can be found [here](../../src/abstract-factory/README-en.md).
+The actual code will be skipped for now, but it can be found [here](../../src/abstract-factory).
 
 Now that you have multiple families, you can create an abstract interface for them.
 
