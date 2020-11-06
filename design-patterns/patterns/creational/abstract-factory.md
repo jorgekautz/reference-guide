@@ -40,7 +40,7 @@ export interface AbstractFactory<T> {
 }
 ```
 
-A continuación, se implementará una fábrica para Animal usando el patrón de diseño Factory Methid que discutió en esta [sección](./factory-method.md):
+A continuación, se implementará una fábrica para *Animal* usando el patrón de diseño [Factory Method](./factory-method.md).
 
 ```typescript
 export class AnimalFactory implements AbstractFactory<Animal> {
