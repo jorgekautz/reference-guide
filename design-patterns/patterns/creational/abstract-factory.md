@@ -1,79 +1,75 @@
 ## Patrón Abstract Factory
 
+El patrón de diseño *Abstract Factory* busca agrupar un conjunto de clases que tiene un funcionamiento en común, llamadas familias. Las cuales son creadas mediante un *Factory*, este patrón es especialmente útil cuando requerimos tener ciertas familias de clases para resolver un problema, sin embargo, puede que se requieran crear implementaciones paralelas de estas clases para resolver el mismo problema pero con una implementación distinta.
+
 <img align="center" src="https://github.com/jorgekautz/reference-guide/blob/master/design-patterns/assets/diagram_abstract_factory.jpg?raw=true">
 
-Primero, crearemos una familia de la clase Animal, ya más adelante la usaremos en nuestro Abstract Factory.
+Primero, crear una interfaz de la clase Animal, ya más adelante se usará en la fábrica abstracta.
 
-```java
-public interface Animal {
-    String getAnimal();
-    String makeSound();
+```typescript
+export interface Animal {
+    getAnimal(): string
+    makeSound(): string
 }
 ```
 
-Y una implementación concreta Duck:
+Luego una implementación concreta, cómo por ejemplo Duck.
 
-```java
-public class Duck implements Animal {
- 
-    @Override
-    public String getAnimal() {
-        return "Duck";
+```typescript
+export class Duck implements Animal {
+    getAnimal(): string {
+        return 'duck'
     }
- 
-    @Override
-    public String makeSound() {
-        return "Squeks";
+    makeSound(): string {
+        return 'squeks'
     }
 }
 ```
 
-Además, podemos crear implementaciones más concretas de la interfaz Animal (como Dog, Bear, etc.) exactamente de esta manera.
+Además, se pueden crear implementaciones más concretas de la familia Animal (como Dog, Bear, etc.) exactamente de esta manera.
 
-Abstract Factory se ocupa de familias de objetos dependientes. Con eso en mente, vamos a presentar una familia de colores más como interfaz con algunas implementaciones ( blanco, marrón,… ).
+La fábrica abstracta se ocupa de familias de objetos dependientes. Con eso en mente, se va a presentar una familia de colores como interfaz, con algunas implementaciones (como White, Brown, Black, etc.).
 
-Saltaremos el código real por ahora, pero se puede encontrar aquí.
+El código real se salteará de momento, pero se puede encontrar [aquí](../../src/abstract-factory/README.md).
 
-Ahora que tenemos varias familias, podemos crear una interfaz AbstractFactory para ellas:
+Ahora que se tienen varias familias, se puede crear una interfaz abstracta para ellas:
 
-```java
-public interface AbstractFactory<T> {
-    T create(String animalType) ;
+```typescript
+export interface AbstractFactory<T> {
+    create(animalType: string): T
 }
 ```
 
-A continuación, implementaremos una AnimalFactory usando el patrón de diseño del método Factory que discutimos en la sección anterior:
+A continuación, se implementará una fábrica para Animal usando el patrón de diseño Factory Methid que discutió en esta [sección](./factory-method.md):
 
-```java
-public class AnimalFactory implements AbstractFactory<Animal> {
- 
-    @Override
-    public Animal create(String animalType) {
-        if ("Dog".equalsIgnoreCase(animalType)) {
+```typescript
+export class AnimalFactory implements AbstractFactory<Animal> {
+    create(animalType: string): Animal {
+        if (animalType === 'Dog') {
             return new Dog();
-        } else if ("Duck".equalsIgnoreCase(animalType)) {
-            return new Duck();
+        } else if (animalType === 'Duck') {
+            return new Duck()
+        } else if (animalType === 'Bear') {
+            return new Bear()
         }
- 
-        return null;
+        return null
     }
 }
 ```
 
-Del mismo modo, podemos implementar una fábrica para la interfaz de color utilizando el mismo patrón de diseño.
+Del mismo modo, se puede implementar una fábrica para la interfaz Color utilizando el mismo patrón de diseño.
 
-Cuando todo esto esté configurado, crearemos una clase FactoryProvider que nos proporcionará una implementación de AnimalFactory o ColorFactory dependiendo del argumento que proporcionemos al método getFactory () :
+Cuando todo esto está configurado, se crea una clase *FactoryProvider* que proporcionará una implementación de *AnimalFactory* o *ColorFactory* dependiendo del argumento que se le proporcione al método *getFactory()*.
 
-```java
-public class FactoryProvider {
-    public static AbstractFactory getFactory(String choice){
-        if("Animal".equalsIgnoreCase(choice)){
-            return new AnimalFactory();
+```typescript
+export class FactoryProvider {
+    getFactory(choice: string): AbstractFactory<any> {
+        if (choice === 'Animal') {
+            return new AnimalFactory()
+        } else if (choice === 'Color') {
+            return new ColorFactory()
         }
-        else if("Color".equalsIgnoreCase(choice)){
-            return new ColorFactory();
-        }
-        return null;
+        return null
     }
 }
 ```

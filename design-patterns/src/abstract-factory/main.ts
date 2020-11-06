@@ -5,9 +5,9 @@ const factory = new FactoryProvider()
 const animal = factory.getFactory('Animal')
 const color = factory.getFactory('Color')
 
-console.log('El oso es de color: ' + color.create('Brown').getColor() + 'hace: '
-    + animal.create('Bear').makeSound())
-console.log('El perro es de color: ' + color.create('Black').getColor() + 'hace: '
+console.log('El Gato es de color ' + color.create('Black').getColor() + ' y hace '
+    + animal.create('Cat').makeSound())
+console.log('El Perro es de color ' + color.create('Brown').getColor() + 'y hace '
     + animal.create('Dog').makeSound())
-console.log('El pato es de color: ' + color.create('White').getColor() + 'hace: '
+console.log('El Pato es de color ' + color.create('White').getColor() + 'y hace '
     +  animal.create('Duck').makeSound())

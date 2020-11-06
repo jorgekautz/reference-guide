@@ -1,21 +1,21 @@
 export interface Color {
-    getColor(): string;
+    getColor(): string
 }
 
 export class White implements Color {
     getColor(): string {
-        return "White";
+        return 'white'
     }
 }
 
 export class Brown implements Color {
     getColor(): string {
-        return "Brown";
+        return 'brown'
     }
 }
 
 export class Black implements Color {
     getColor(): string {
-        return "Black";
+        return 'black'
     }
 }

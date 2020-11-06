@@ -1,31 +1,31 @@
 export interface Animal {
-    getAnimal(): string;
-    makeSound(): string;
+    getAnimal(): string
+    makeSound(): string
 }
 
 export class Duck implements Animal {
     getAnimal(): string {
-        return "Duck";
+        return 'duck'
     }
     makeSound(): string {
-        return "Squeks";
+        return 'squeks'
     }
 }
 
 export class Dog implements Animal {
     getAnimal(): string {
-        return "Dog";
+        return 'dog'
     }
     makeSound(): string {
-        return "Guau";
+        return 'guau'
     }
 }
 
-export class Bear implements Animal {
+export class Cat implements Animal {
     getAnimal(): string {
-        return "Bear";
+        return 'cat'
     }
     makeSound(): string {
-        return "Gruu";
+        return 'miau'
     }
 }

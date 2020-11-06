@@ -4,10 +4,10 @@ import { ColorFactory } from './color-factory'
 
 export class FactoryProvider {
     getFactory(choice: string): AbstractFactory<any> {
-        if(choice === 'Animal'){
-            return new AnimalFactory();
-        } else if(choice === 'Color'){
-            return new ColorFactory();
+        if (choice === 'Animal') {
+            return new AnimalFactory()
+        } else if (choice === 'Color') {
+            return new ColorFactory()
         }
         return null;
     }

@@ -1,3 +1,3 @@
 export interface AbstractFactory<T> {
-    create(animalType: string): T ;
+    create(animalType: string): T 
 }
