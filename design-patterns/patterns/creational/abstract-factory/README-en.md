@@ -1,6 +1,6 @@
 ## Abstract Factory pattern
 
-The *Abstract Factory* design pattern seeks to group a set of classes that have a common function, called families. Which are created through a *Factory*, this pattern is especially useful when we need to have certain families of classes to solve a problem, however, it may be necessary to create parallel implementations of these classes to solve the same problem but with a different implementation.
+The *Abstract Factory* design pattern seeks to group a set of classes that have a common function, called families, which are created through a *Factory*. This pattern is especially useful when we need to have certain families of classes to solve a problem, however, it may be necessary to create parallel implementations of these classes to solve the same problem but with a different implementation.
 
 <img align="center" src="https://github.com/jorgekautz/reference-guide/blob/master/design-patterns/assets/diagram_abstract_factory.jpg?raw=true">
 
