@@ -17,22 +17,22 @@ Luego una implementación concreta, cómo por ejemplo Duck.
 
 ```typescript
 export class Duck implements Animal {
-    getAnimal(): string {
+    public getAnimal(): string {
         return 'duck'
     }
-    makeSound(): string {
+    public makeSound(): string {
         return 'squeks'
     }
 }
 ```
 
-Además, se pueden crear implementaciones más concretas de la familia Animal (como Dog, Bear, etc.) exactamente de esta manera.
+Además, se pueden crear implementaciones más concretas de la familia Animal (Dog, Bear, etc.) exactamente de esta manera.
 
-La fábrica abstracta se ocupa de familias de objetos dependientes. Con eso en mente, se va a presentar una familia de colores como interfaz, con algunas implementaciones (como White, Brown, Black, etc.).
+La fábrica abstracta se ocupa de familias de objetos dependientes. Con eso en mente, se va a presentar una familia de colores como interfaz, con algunas implementaciones (White, Brown, Black, etc.).
 
 El código real se salteará de momento, pero se puede encontrar [aquí](../../src/abstract-factory/README.md).
 
-Ahora que se tienen varias familias, se puede crear una interfaz abstracta para ellas:
+Ahora que se tienen varias familias, se puede crear una interfaz abstracta para ellas.
 
 ```typescript
 export interface AbstractFactory<T> {
@@ -44,7 +44,7 @@ A continuación, se implementará una fábrica para *Animal* usando el patrón d
 
 ```typescript
 export class AnimalFactory implements AbstractFactory<Animal> {
-    create(animalType: string): Animal {
+    public create(animalType: string): Animal {
         if (animalType === 'Dog') {
             return new Dog();
         } else if (animalType === 'Duck') {
@@ -63,7 +63,7 @@ Cuando todo esto está configurado, se crea una clase *FactoryProvider* que prop
 
 ```typescript
 export class FactoryProvider {
-    getFactory(choice: string): AbstractFactory<any> {
+    public getFactory(choice: string): AbstractFactory<any> {
         if (choice === 'Animal') {
             return new AnimalFactory()
         } else if (choice === 'Color') {
