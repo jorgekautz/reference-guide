@@ -140,8 +140,8 @@ public class MyFirstJavaProgram {
 ### Tipos de datos
 
 Hay dos tipos de datos disponibles en Java:
-* Tipos de datos primitivos
-* Tipos de datos de referencia o de objeto
+* [Tipos de datos primitivos](#tipos-de-datos-primitivos)
+* [Tipos de datos de referencia o de objeto](#tipos-de-datos-de-referencia)
 
 #### Tipos de datos primitivos
 
@@ -161,7 +161,4 @@ Hay ocho tipos de datos primitivos compatibles con Java. Los tipos de datos prim
 acceder a objetos. Estas variables se declaran de un tipo específico que no se puede cambiar. Por ejemplo, empleado, cachorro, etc.
 * Los objetos de clase y varios tipos de variables de matriz se incluyen en el tipo de datos de referencia.
 * El valor predeterminado de cualquier variable de referencia es nulo.
-* Una variable de referencia se puede utilizar para hacer referencia a cualquier objeto del tipo declarado o cualquier tipo compatible.
-```java
-Animal animal = new Animal ("jirafa");
-```
+* Una variable de referencia se puede utilizar para hacer referencia a cualquier objeto del tipo declarado o cualquier tipo compatible. Ejemplo: "Animal animal = new Animal ("jirafa");"
