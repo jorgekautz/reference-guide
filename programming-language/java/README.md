@@ -49,8 +49,8 @@ public class MyFirstJavaProgram {
 ```
 Acerca de los programas Java, es muy importante tener en cuenta los siguientes puntos:
 * **Sensibilidad de mayúsculas y minúsculas**: Java distingue entre mayúsculas y minúsculas, lo que significa identificador *Hola* y *hola* tendría un significado diferente.
-* **Nombre de las clases**: Para todos los nombres de clases, la primera letra debe estar en mayúsculas. Si se utilizan varias palabras para formar un nombre de la clase, la primera letra de cada palabra interior debe estar en mayúsculas. Ejemplo *classMyFirstJavaClass*.
-* **Nombre de los métodos**: Todos los nombres de métodos deben comenzar con una letra minúscula. Si se utilizan varias palabras para formar el nombre del método, entonces la primera letra de cada palabra interna debe estar en mayúsculas. Ejemplo *public void myMethodName()*
+* **Nombre de las clases**: Para todos los nombres de clases, la primera letra debe estar en mayúsculas. Si se utilizan varias palabras para formar un nombre de la clase, la primera letra de cada palabra interior debe estar en mayúsculas. Ejemplo: "class MyFirstJavaClass".
+* **Nombre de los métodos**: Todos los nombres de métodos deben comenzar con una letra minúscula. Si se utilizan varias palabras para formar el nombre del método, entonces la primera letra de cada palabra interna debe estar en mayúsculas. Ejemplo: "public void myMethodName()"
 * **Nombre del archivo de programa**: El nombre del archivo del programa debe coincidir exactamente con el nombre de la clase. Al guardar el archivo, debe guardarlo usando el nombre de la clase (recuerde que java distingue entre mayúsculas y minúsculas) y agregar '.java' al final del nombre. (si el nombre del archivo y el nombre de la clase no coinciden con su programa, no se compilará). Ejemplo: suponga que "MyFirstJavaProgram" es el nombre de la clase. Entonces el archivo debe guardarse como "MyFirstJavaProgram.java"
 * **public static void main(String args[])**: El procesamiento del programa Java comienza desde el
 método *main()* que es una parte obligatoria de cada programa java.
@@ -115,8 +115,9 @@ public class FreshJuiceTest {
 ### Palabras clave de Java
 
 La siguiente lista muestra las palabras reservadas en Java. Estas palabras reservadas no se pueden utilizar como constantes o variables o cualquier otro nombre de identificador: 
-
-*abstract*, *assert*, *boolean*, *break*, *byte*, *case*, *catch*, *char*, *class*, *const*, *continue*, *default*, *do*, *double*, *else*, *enum*, *extends*, *final*, *finally*, *float*, *for*, *goto*, *if*, *implements*, *import*, *instanceof*, *int*, *interface*, *long*, *native*, *new*, *package*, *private*, *private*, *public*, *return*, *short*, *static*, *strictfp*, *super*, *switch*, *synchronized*, *this*, *throw*, *throws*, *transient*, *try*, *void*, *volatile*, *while*.
+```
+abstract, assert, boolean, break, byte, case, catch, char, class, const, continue, default, do, double, else, enum, extends, final, finally, float, for, goto, if, implements, import, instanceof, int, interface, long, native, new, package, private, private, public, return, short, static, strictfp, super, switch, synchronized, this, throw, throws, transient, try, void, volatile, while
+```
 
 ### Comentarios
 
@@ -145,14 +146,14 @@ Hay dos tipos de datos disponibles en Java:
 #### Tipos de datos primitivos
 
 Hay ocho tipos de datos primitivos compatibles con Java. Los tipos de datos primitivos están predefinidos por el idioma y nombrados por una palabra clave. Veamos ahora en detalle acerca de los ocho tipos de datos primitivos:
-* byte
-* short
-* int
-* long
-* float
-* double
-* boolean
-* char
+* **byte**: Representa un tipo de dato de 8 bits con signo. De tal manera que puede almacenar los valores numéricos de -128 a 127 (ambos inclusive).
+* **short**: Representa un tipo de dato de 16 bits con signo. De esta manera almacena valores numéricos de -32.768 a 32.767.
+* **int**: Es un tipo de dato de 32 bits con signo para almacenar valores numéricos. Cuyo valor mínimo es -2^31 y el valor máximo 2^31 - 1.
+* **long**: Es un tipo de dato de 64 bits con signo que almacena valores numéricos entre -2^63 a 2^63 - 1
+* **float**: Es un tipo dato para almacenar números en coma flotante con precisión simple de 32 bits.
+* **double**: Es un tipo de dato para almacenar números en coma flotante con doble precisión de 64 bits.
+* **boolean**: Sirve para definir tipos de datos booleanos. Es decir, aquellos que tienen un valor de true o false. Ocupa 1 bit de información.
+* **char**: Es un tipo de datos que representa a un carácter Unicode sencillo de 16 bits.
 
 #### Tipos de datos de referencia
 
@@ -161,8 +162,6 @@ acceder a objetos. Estas variables se declaran de un tipo específico que no se 
 * Los objetos de clase y varios tipos de variables de matriz se incluyen en el tipo de datos de referencia.
 * El valor predeterminado de cualquier variable de referencia es nulo.
 * Una variable de referencia se puede utilizar para hacer referencia a cualquier objeto del tipo declarado o cualquier tipo compatible.
-
-Ejemplo:
 ```java
 Animal animal = new Animal ("jirafa");
 ```
